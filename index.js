@@ -40,8 +40,17 @@
 
 // console.log(today)
 
-const moment = require('moment')
+// 
 
-console.log(moment().format("MMM Do YYYY"))
-console.log(moment('06-18-1989', 'MM DD YYYY').format("dddd [the] Do [of] MMMM [in the year] YYYY"))
-console.log('Oh boy, that was', moment('06-18-1989', 'MM DD YYYY').fromNow(), 'year ago!')
+// let oneLinerJoke = require('one-liner-joke')
+// let getRandomJoke = oneLinerJoke.getRandomJoke()
+// console.log(getRandomJoke)
+
+const express = require('express')
+const app = express()
+ 
+app.get('/', function (req, res) {
+  res.send('Hello World')
+})
+ 
+app.listen(3000)
